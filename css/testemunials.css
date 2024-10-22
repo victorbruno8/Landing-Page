@@ -1,0 +1,97 @@
+#testemunials {
+    min-height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    margin-bottom: 200px;
+}
+
+#testemunial-chef {
+    width: 500px;
+    height: auto;
+}
+
+#testemunials .section-subtitle {
+    font-size: 3rem;
+}
+
+#testemunials_content {
+    width: 50%;
+}
+
+#feedbacks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.feedback-content p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-content p span {
+    color: #e9a209;
+}
+
+@media screen and (max-width: 1170px) {
+
+    #testemunials_content {
+        width: 90%;
+    }
+
+    #testemunials {
+        flex-direction: column;
+    }
+
+    .section-subtitle {
+        font-size: 17px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .feedback {
+        flex-direction: column;
+    }
+
+    .feedback-content p {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        justify-content: space-around;
+    }
+
+    #testemunials_content .btn-default {
+        margin: auto;
+    }
+
+    #testemunial-chef {
+        width: 300px;
+        height: auto;
+    }
+}
